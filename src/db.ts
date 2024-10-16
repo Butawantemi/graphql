@@ -25,3 +25,9 @@ let reviews = [
     {id: 10, rating: 4, content: 'Bad game', author_id: 1, game_id: 4 },
     {id: 11, rating: 4, content: 'Bad game', author_id: 3, game_id: 4 }
 ]
+
+export default {
+    games,
+    authors,
+    reviews
+}
