@@ -9,4 +9,7 @@ export const typeDefs = `#graphql
         rating: Int!
         content: String!
     }
+    type Author {
+        id: ID!
+    }
 `
