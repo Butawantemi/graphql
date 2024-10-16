@@ -11,5 +11,7 @@ export const typeDefs = `#graphql
     }
     type Author {
         id: ID!
+        name: String!
+        verified: Boolean!
     }
 `
