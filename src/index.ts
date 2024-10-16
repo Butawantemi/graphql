@@ -11,7 +11,12 @@ import  { typeDefs } from './schema';
 // Resolvers
 const resolvers = {
     Query:  {
-        books: () => books,
+        Games() {
+            return db.games;
+        },
+        Reviews() {
+            return db.reviews;
+        }
     }
 }
 
