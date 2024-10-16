@@ -20,4 +20,4 @@ export const typeDefs = `#graphql
         Games: [Game]
         Authors: [Author]
     }
-`
+`;
