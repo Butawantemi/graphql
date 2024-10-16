@@ -6,17 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Butawantemi/graphql.git"
-  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Butawantemi/graphql/issues"
-  },
-  "homepage": "https://github.com/Butawantemi/graphql#readme",
   "type": "module",
   "dependencies": {
     "@apollo/server": "^4.11.0",
