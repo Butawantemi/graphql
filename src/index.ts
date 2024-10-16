@@ -14,6 +14,9 @@ const resolvers = {
         Games() {
             return db.games;
         },
+        Authors() {
+            return db.authors;
+        },
         Reviews() {
             return db.reviews;
         }
