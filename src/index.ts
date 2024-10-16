@@ -13,6 +13,7 @@ const typeDefs = `#graphql
         books: [Book]}
 `;
 
+// Data Set
 const books = [
     {
         title: 'Harry Potter and the Chamber of Secrets',
@@ -26,4 +27,12 @@ const books = [
         title: 'The Da Vinci Code',
         author: 'Dan Brown'
     }
-]
+];
+
+
+// Resolvers
+const resolvers = {
+    Query:  {
+        books: () => books,
+    }
+}
