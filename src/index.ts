@@ -36,3 +36,9 @@ const resolvers = {
         books: () => books,
     }
 }
+
+// Apollo Server 
+const server = new ApolloServer({
+    typeDefs,
+    resolvers
+});
