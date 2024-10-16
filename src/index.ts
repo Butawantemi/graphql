@@ -8,24 +8,6 @@ import db from './db';
 import  { typeDefs } from './schema';
 
 
-
-// Data Set
-const books = [
-    {
-        title: 'Harry Potter and the Chamber of Secrets',
-        author: 'J.K. Rowling'
-    },
-    {
-        title: 'Jurassic Park',
-        author: 'Michael Crichton'
-    },
-    {
-        title: 'The Da Vinci Code',
-        author: 'Dan Brown'
-    }
-];
-
-
 // Resolvers
 const resolvers = {
     Query:  {
