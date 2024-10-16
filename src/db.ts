@@ -15,5 +15,6 @@ let authors = [
 
 let reviews = [
     {id: 1, rating: 9, content: 'A great game', author_id: 1, game_id: 2 },
-    {id: 2, rating: 7, content: 'well', author_id: 4, game_id: 3 }
+    {id: 2, rating: 7, content: 'well', author_id: 2, game_id: 3 },
+    {id: 3, rating: 4, content: 'Bad game', author_id: 3, game_id: 4 }
 ]
