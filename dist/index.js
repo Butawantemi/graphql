@@ -7,15 +7,9 @@ import { typeDefs } from './schema.js';
 // Resolvers
 const resolvers = {
     Query: {
-        Game() {
-            return db.games;
-        },
-        Author() {
-            return db.authors;
-        },
-        Review() {
-            return db.reviews;
-        }
+        Games: () => db.games,
+        Authors: () => db.authors,
+        Reviews: () => db.reviews,
     }
 };
 // Apollo Server 
