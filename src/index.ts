@@ -1,17 +1,10 @@
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 
+// TypeDefs
+import  { typeDefs } from './schema'
 
 
-const typeDefs = `#graphql
-    type Book {
-        title: String,
-        author: String
-    }
-
-    type Query {
-        books: [Book]}
-`;
 
 // Data Set
 const books = [
