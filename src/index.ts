@@ -21,5 +21,9 @@ const books = [
     {
         title: 'Jurassic Park',
         author: 'Michael Crichton'
+    },
+    {
+        title: 'The Da Vinci Code',
+        author: 'Dan Brown'
     }
 ]
