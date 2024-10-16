@@ -50,3 +50,5 @@ const { url } = await startStandaloneServer( server, {
         port: 4000,
     }
 });
+
+console.log(`Server ready at ${url}`);
