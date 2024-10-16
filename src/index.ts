@@ -1,6 +1,6 @@
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
-import { title } from 'process';
+
 
 
 const typeDefs = `#graphql
@@ -42,3 +42,5 @@ const server = new ApolloServer({
     typeDefs,
     resolvers
 });
+
+const { url } = await startStandaloneServer({ server, port = 4000 });
