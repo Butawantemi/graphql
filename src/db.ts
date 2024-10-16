@@ -8,5 +8,5 @@ let games = [
 ];
 let authors = [
     {id: 1, name: 'Shigeru Miyamoto', verified: true},
-    {id: 2, name: 'Eiji Aonuma'}
+    {id: 2, name: 'Eiji Aonuma', verified: false},
 ]
