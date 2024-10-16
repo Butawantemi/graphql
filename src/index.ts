@@ -1,8 +1,11 @@
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 
+// Data
+import db from './db';
+
 // TypeDefs
-import  { typeDefs } from './schema'
+import  { typeDefs } from './schema';
 
 
 
