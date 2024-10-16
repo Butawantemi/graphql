@@ -16,7 +16,6 @@ const resolvers = {
         Reviews: () => db.reviews,
     }
 }
-
 // Apollo Server 
 const server = new ApolloServer({
     typeDefs,
