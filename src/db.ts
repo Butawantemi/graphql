@@ -15,14 +15,14 @@ let authors = [
 
 let reviews = [
     {id: 1, rating: 9, content: 'A great game', author_id: 1, game_id: 2 },
-    {id: 2, rating: 7, content: 'well', author_id: 2, game_id: 3 },
+    {id: 2, rating: 7, content: 'Well', author_id: 2, game_id: 3 },
     {id: 3, rating: 4, content: 'Bad game', author_id: 3, game_id: 4 },
-    {id: 3, rating: 4, content: 'Bad game', author_id: 3, game_id: 4 },
-    {id: 3, rating: 4, content: 'Bad game', author_id: 3, game_id: 4 },
-    {id: 3, rating: 4, content: 'Bad game', author_id: 3, game_id: 4 },
-    {id: 3, rating: 4, content: 'Bad game', author_id: 3, game_id: 4 },
-    {id: 3, rating: 4, content: 'Bad game', author_id: 3, game_id: 4 },
-    {id: 3, rating: 4, content: 'Bad game', author_id: 3, game_id: 4 },
-    {id: 3, rating: 4, content: 'Bad game', author_id: 3, game_id: 4 },
-    {id: 3, rating: 4, content: 'Bad game', author_id: 3, game_id: 4 }
+    {id: 4, rating: 10, content: 'Very Good', author_id: 2, game_id: 4 },
+    {id: 5, rating: 8, content: 'Good', author_id: 1, game_id: 4 },
+    {id: 6, rating: 6, content: 'Bad game', author_id: 3, game_id: 5 },
+    {id: 7, rating: 8, content: 'Good', author_id: 1, game_id: 4 },
+    {id: 8, rating: 4, content: 'Bad game', author_id: 3, game_id: 3 },
+    {id: 9, rating: 9, content: 'A great game', author_id: 2, game_id: 4 },
+    {id: 10, rating: 4, content: 'Bad game', author_id: 1, game_id: 4 },
+    {id: 11, rating: 4, content: 'Bad game', author_id: 3, game_id: 4 }
 ]
