@@ -1,5 +1,6 @@
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
+import { title } from 'process';
 
 
 const typeDefs = `#graphql
@@ -11,3 +12,10 @@ const typeDefs = `#graphql
     type Query {
         books: [Book]}
 `;
+
+const books = [
+    {
+        title: 'Harry Potter and the Chamber of Secrets',
+        author: 'J.K. Rowling'
+    }
+]
