@@ -1,5 +1,7 @@
 export const typeDefs = `#graphql
-    type Book {
-        title: String,
+    type Game {
+        id: ID
+        title: String
+        platform: [String!]
     }
 `
