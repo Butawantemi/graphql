@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/Butawantemi/graphql/issues"
   },
-  "homepage": "https://github.com/Butawantemi/graphql#readme"
+  "homepage": "https://github.com/Butawantemi/graphql#readme",
+  "type": "module"
 }
