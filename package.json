@@ -17,5 +17,9 @@
     "url": "https://github.com/Butawantemi/graphql/issues"
   },
   "homepage": "https://github.com/Butawantemi/graphql#readme",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@apollo/server": "^4.11.0",
+    "graphql": "^16.9.0"
+  }
 }
