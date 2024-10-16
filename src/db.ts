@@ -6,7 +6,13 @@ let games = [
     {id: 4, title: 'The Last of Us Part II', platform: ['PlayStation 4']},
     {id: 5, title: 'Red Dead Redemption 2', platform: ['PlayStation 4', 'Xbox one']}
 ];
+
 let authors = [
     {id: 1, name: 'Shigeru Miyamoto', verified: true},
     {id: 2, name: 'Eiji Aonuma', verified: false},
+    {id: 3, name: 'Hidemaro Fujibayashi', verified: true}
+];
+
+let reviews = [
+    {id: 1, }
 ]
