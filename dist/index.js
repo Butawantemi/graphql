@@ -10,6 +10,9 @@ const resolvers = {
         Games: () => db.games,
         Authors: () => db.authors,
         Reviews: () => db.reviews,
+        Review: (_, args) => {
+            return db.reviews.find(review => review.id === args.id);
+        }
     }
 };
 // Apollo Server 

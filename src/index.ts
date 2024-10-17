@@ -15,7 +15,7 @@ const resolvers = {
         Authors: () => db.authors,
         Reviews: () => db.reviews,
         Review: (_: any, args: { id: number; }) => {
-            return db.reviews.find(reviews => reviews.id === args.id);
+            return db.reviews.find(review => review.id === args.id);
         }
     }
 }
