@@ -28,8 +28,12 @@ const resolvers = {
         Reviews: (parent: any) => {
             return db.reviews.filter((r) => r.game_id === parent.id)
         }
+    },
+    Author: {
+        Reviews: (parent: any) => {
+            return db.reviews.filter((r) => r.author_id === parent.id)
+        }
     }
-
 }
 // Apollo Server 
 const server = new ApolloServer({
