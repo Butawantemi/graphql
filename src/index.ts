@@ -41,6 +41,11 @@ const resolvers = {
         game: (parent: any) => {
             return db.games.find((g) => g.id === parent.game_id) 
         }
+    },
+    Mutation: {
+        deleteGame: (_: any, args: { id: string }) => {
+            
+        }
     }
 }
 // Apollo Server 
