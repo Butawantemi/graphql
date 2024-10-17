@@ -23,12 +23,13 @@ const resolvers = {
         review: (_: any, args: { id: string; }) => {
             return db.reviews.find(review => review.id === Number(args.id));
         },
-        Game: {
-            Reviews: (parent: any) => {
-                return db.reviews.filter((r) => r.game_id === parent.id)
-            }
+    },
+    Game: {
+        Reviews: (parent: any) => {
+            return db.reviews.filter((r) => r.game_id === parent.id)
         }
     }
+
 }
 // Apollo Server 
 const server = new ApolloServer({
