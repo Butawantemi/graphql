@@ -55,6 +55,11 @@ const resolvers = {
 
             db.games.push(game)
             return game;
+        },
+        updateGame: (_: any, args: { id: string, game: any }) => {
+            db.games = db.games.map((g) => {
+                
+            })
         }
     }
 }
