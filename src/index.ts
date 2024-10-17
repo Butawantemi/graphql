@@ -14,6 +14,9 @@ const resolvers = {
         Games: () => db.games,
         Authors: () => db.authors,
         Reviews: () => db.reviews,
+        Review: (_: any, args: { id: number; }) => {
+            return db.reviews.find(review => review.id === args.id);
+        }
     }
 }
 // Apollo Server 
