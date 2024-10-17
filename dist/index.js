@@ -40,7 +40,7 @@ const resolvers = {
     },
     Mutation: {
         deleteGame: (_, args) => {
-            db.games = db.games.filter((t) => t.id !== Number(args.id));
+            db.games = db.games.filter((t) => t.id !== args);
         }
     }
 };

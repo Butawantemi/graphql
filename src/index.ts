@@ -43,8 +43,9 @@ const resolvers = {
         }
     },
     Mutation: {
-        deleteGame: (_: any, args: { id: number }) => {
+        deleteGame: (_: any, args: { id: number } ) => {
            db.games = db.games.filter((t) => t.id !== args.id);
+           return db.games
         }
     }
 }
