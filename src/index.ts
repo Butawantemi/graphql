@@ -56,7 +56,7 @@ const resolvers = {
             db.games.push(game)
             return game;
         },
-        updateGame: (_: any, args: { id: string, game: any }) => {
+        updateGame: (_: any, args: { id: string, edits: any }) => {
             db.games = db.games.map((g) => {
                 if(g.id === Number(args.id)) {
                     return {
