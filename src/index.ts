@@ -33,6 +33,11 @@ const resolvers = {
         Reviews: (parent: any) => {
             return db.reviews.filter((r) => r.author_id === parent.id)
         }
+    },
+    Review: {
+        game: (parent: any) => {
+            return db.games.find((g) => g.id === parent.game_id) 
+        }
     }
 }
 // Apollo Server 

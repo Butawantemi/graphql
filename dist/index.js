@@ -24,6 +24,11 @@ const resolvers = {
         Reviews: (parent) => {
             return db.reviews.filter((r) => r.game_id === parent.id);
         }
+    },
+    Author: {
+        Reviews: (parent) => {
+            return db.reviews.filter((r) => r.author_id === parent.id);
+        }
     }
 };
 // Apollo Server 
