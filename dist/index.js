@@ -8,7 +8,13 @@ import { typeDefs } from './schema.js';
 const resolvers = {
     Query: {
         Games: () => db.games,
+        Game: (_, args) => {
+            return db.games.find(game => game.id === Number(args.id));
+        },
         Authors: () => db.authors,
+        Author: (_, args) => {
+            return db.authors.find(author => author.id === Number(args.id));
+        },
         Reviews: () => db.reviews,
         Review: (_, args) => {
             return db.reviews.find(review => review.id === Number(args.id));
