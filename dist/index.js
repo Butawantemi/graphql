@@ -18,6 +18,11 @@ const resolvers = {
         Reviews: () => db.reviews,
         Review: (_, args) => {
             return db.reviews.find(review => review.id === Number(args.id));
+        },
+        game: {
+            Reviews: (parent) => {
+                return db.reviews.filter((r) => r.game_id === parent.id);
+            }
         }
     }
 };
