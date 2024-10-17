@@ -16,6 +16,9 @@ const resolvers = {
             return db.games.find(game => game.id === Number(args.id));
         },
         Authors: () => db.authors,
+        Author: (_: any, args: { id: string; }) => {
+            return db.authors.find(author => author.id === Number(args.id));
+        },
         Reviews: () => db.reviews,
         Review: (_: any, args: { id: string; }) => {
             return db.reviews.find(review => review.id === Number(args.id));
