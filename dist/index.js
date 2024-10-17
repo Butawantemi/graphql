@@ -7,19 +7,19 @@ import { typeDefs } from './schema.js';
 // Resolvers
 const resolvers = {
     Query: {
-        Games: () => db.games,
-        Game: (_, args) => {
+        games: () => db.games,
+        game: (_, args) => {
             return db.games.find(game => game.id === Number(args.id));
         },
-        Authors: () => db.authors,
-        Author: (_, args) => {
+        authors: () => db.authors,
+        author: (_, args) => {
             return db.authors.find(author => author.id === Number(args.id));
         },
-        Reviews: () => db.reviews,
-        Review: (_, args) => {
+        reviews: () => db.reviews,
+        review: (_, args) => {
             return db.reviews.find(review => review.id === Number(args.id));
         },
-        game: {
+        Game: {
             Reviews: (parent) => {
                 return db.reviews.filter((r) => r.game_id === parent.id);
             }
